@@ -63,7 +63,8 @@ public:
 
     VerletObject& addObject(sf::Vector2f position, float radius)
     {
-        return m_objects.emplace_back(position, radius);
+        m_objects.emplace_back(position, radius);
+        return m_objects.back();
     }
 
     void update()

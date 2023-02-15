@@ -25,7 +25,7 @@ int32_t main(int32_t, char*[])
 
     sf::ContextSettings settings;
     settings.antialiasingLevel = 1;
-    sf::RenderWindow window(sf::VideoMode(window_width, window_height), "Verlet", sf::Style::Default, settings);
+    sf::RenderWindow window(sf::VideoMode(window_width, window_height), "Verlet", sf::Style::Close | sf::Style::Titlebar | sf::Style::None, settings);
     const uint32_t frame_rate = 60;
     window.setFramerateLimit(frame_rate);
 
